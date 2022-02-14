@@ -202,3 +202,26 @@
             return md5(roundHours(3, new Date()) + window.navigator.userAgent + window.navigator.languages.toString() );
         }
     </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2993253-12"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    <!-- REPLACE YOUR ID HERE -->
+    gtag('config', 'UA-XXXXXXX-XX',  
+        { 
+            'anonymize_ip': true,
+            'allow_ad_personalization_signals': false,
+            'allow_google_signals': false,
+            'ad_storage': 'denied',
+            client_storage: 'none',
+            client_id: buildUserId()
+        }
+    );
+    </script>
+
+
